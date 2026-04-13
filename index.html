@@ -7,74 +7,46 @@
     <title>Presentasi Proposal Tugas Akhir</title>
 
     <style>
-        body {
+        * {
             margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #0f172a;
-            color: #fff;
+            padding: 0;
+            box-sizing: border-box;
         }
 
-        .container {
-            max-width: 1200px;
-            margin: auto;
-            padding: 20px;
-        }
-
-        .embed-wrapper {
-            position: relative;
+        body {
             width: 100%;
-            height: 0;
-            padding-top: 56.25%;
-            border-radius: 12px;
+            height: 100vh;
             overflow: hidden;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            font-family: Arial, sans-serif;
+            background-color: #000;
         }
 
-        .embed-wrapper iframe {
-            position: absolute;
+        iframe {
             width: 100%;
             height: 100%;
-            top: 0;
-            left: 0;
             border: none;
         }
 
-        .link {
-            margin-top: 12px;
-            text-align: center;
-        }
-
-        .link a {
-            color: #38bdf8;
-            text-decoration: none;
-            font-size: 14px;
-        }
-
-        .link a:hover {
-            text-decoration: underline;
+        /* Optional loading text */
+        .loading {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 18px;
         }
     </style>
 </head>
 
 <body>
 
-    <div class="container">
+    <div class="loading">Memuat presentasi...</div>
 
-        <div class="embed-wrapper">
-            <iframe 
-                loading="lazy"
-                src="https://www.canva.com/design/DAHGj4lWe5M/uggPkAugFbf4o6Pzc5s14w/view?embed"
-                allowfullscreen>
-            </iframe>
-        </div>
-
-        <div class="link">
-            <a href="https://www.canva.com/design/DAHGj4lWe5M/uggPkAugFbf4o6Pzc5s14w/view" target="_blank">
-                Buka Presentasi di Canva
-            </a>
-        </div>
-
-    </div>
+    <iframe 
+        src="https://proposal-fransiska.my.canva.site/" 
+        onload="document.querySelector('.loading').style.display='none'">
+    </iframe>
 
 </body>
 
