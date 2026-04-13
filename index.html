@@ -4,54 +4,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PRESENTASI PROPOSAL TUGAS AKHIR</title>
-    <link rel="icon" type="image/png" href="Logo.png">
+    <title>Presentasi Proposal Tugas Akhir</title>
 
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
         body {
-            width: 100%;
-            min-height: 100vh;
+            margin: 0;
             font-family: Arial, sans-serif;
-            background-color: #000;
+            background-color: #0f172a;
+            color: #fff;
         }
 
-        .iframe-container {
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .embed-wrapper {
             position: relative;
             width: 100%;
-            padding-top: 56.25%; /* Rasio 16:9 */
+            height: 0;
+            padding-top: 56.25%;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
         }
 
-        .iframe-container iframe {
+        .embed-wrapper iframe {
             position: absolute;
-            top: 0;
-            left: 0;
             width: 100%;
             height: 100%;
+            top: 0;
+            left: 0;
             border: none;
         }
 
-        /* Optional: Mobile adjustment */
-        @media screen and (max-width: 768px) {
-            .iframe-container {
-                padding-top: 75%; /* Lebih nyaman di HP */
-            }
+        .link {
+            margin-top: 12px;
+            text-align: center;
+        }
+
+        .link a {
+            color: #38bdf8;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .link a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 
 <body>
 
-    <div class="iframe-container">
-        <iframe 
-            src="https://www.canva.com/design/DAHGj4lWe5M/uggPkAugFbf4o6Pzc5s14w/view" 
-            allowfullscreen>
-        </iframe>
+    <div class="container">
+
+        <div class="embed-wrapper">
+            <iframe 
+                loading="lazy"
+                src="https://www.canva.com/design/DAHGj4lWe5M/uggPkAugFbf4o6Pzc5s14w/view?embed"
+                allowfullscreen>
+            </iframe>
+        </div>
+
+        <div class="link">
+            <a href="https://www.canva.com/design/DAHGj4lWe5M/uggPkAugFbf4o6Pzc5s14w/view" target="_blank">
+                Buka Presentasi di Canva
+            </a>
+        </div>
+
     </div>
 
 </body>
